@@ -55,32 +55,3 @@ Calculator.prototype.Multiplication = function(a, b){
 
 	return value;
 };
-
-//Listeners to Calculator
-document.getElementById('sum').addEventListener('click', function(){
-	var valueA = Number(document.getElementById('valueA').value);
-	var valueB = Number(document.getElementById('valueB').value);
-	outputValue(Calculator.prototype.Sum(valueA, valueB));
-});
-
-document.getElementById('subtract').addEventListener('click', function(){
-	var valueA = Number(document.getElementById('valueA').value);
-	var valueB = Number(document.getElementById('valueB').value);
-	outputValue(Calculator.prototype.Subtract(valueA, valueB));
-});
-
-document.getElementById('division').addEventListener('click', function(){
-	var valueA = Number(document.getElementById('valueA').value);
-	var valueB = Number(document.getElementById('valueB').value);
-	outputValue(Calculator.prototype.Division(valueA, valueB));
-});
-
-document.getElementById('multiplication').addEventListener('click', function(){
-	var valueA = Number(document.getElementById('valueA').value);
-	var valueB = Number(document.getElementById('valueB').value);
-	outputValue(Calculator.prototype.Multiplication(valueA, valueB));
-});
-
-function outputValue(valueCalc){
-	document.getElementById('output').textContent = valueCalc;
-};
