@@ -32,7 +32,7 @@ Calculator.prototype.Sum = function(a, b){
 	return value;
 };
 
-Calculator.prototype.Subtract = function(a, b){
+Calculator.prototype.Subtraction = function(a, b){
 	var value = a - b;
 	if (isNaN(value))
 		return 'Not was possible';
